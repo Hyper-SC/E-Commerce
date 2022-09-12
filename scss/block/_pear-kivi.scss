@@ -1,0 +1,85 @@
+.mint-inner{
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $phone) {
+        display: flex;
+        flex-direction: column;
+    }
+    .bc-img{
+        position: relative;
+        right: -89px;
+        background-image: url(../img/bc-img-header.png);
+        background-repeat: no-repeat;
+        width: 1704.5px;
+        height: 831.25px; 
+        @media (max-width: $tab) {
+            position: relative;
+            top: -50px;
+            background-image: url(../img/bc-img-tab.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            width: 574.03px;
+            height: 465.06px;
+            @media (max-width: $phone) {
+                position: relative;
+                top: 70px;
+                right: 10px;
+                background-image: url(../img/bc-img-phone.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 230px;
+                height: 160px;
+            }
+        }
+        img{
+            position: relative;
+            left: -70px;
+            top: 45px;
+            @media (max-width: $tab ) {
+                width: 320px;
+                height: 240px;
+                position: absolute;
+                top: 170px;
+                left: 220px;
+            }
+            @media (max-width: $phone) {
+                width: 140px;
+                height: 105px;
+                position: relative;
+                top: 45px;
+                left: 45px;
+            }
+        }
+    }
+}
+.mint-item{
+    @media (max-width: $tab) {
+        max-width: 400px;
+        transform: translateX(100px);
+    }
+    @media (max-width: $phone) {
+        position: absolute;
+        top: 350px;
+        left: 90px;
+        text-align: center;
+    }
+    h2{
+        font-family: $frist-font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 90px;
+        line-height: 89.84%;
+        color: $color-shrift;
+        margin-bottom: 38px;
+    }
+
+    p{
+        font-family: $second-font-family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        color: $color-shrift-p;
+    }
+}

@@ -1,0 +1,43 @@
+.diffuser-inner{
+    padding-top: 180px;
+    @media (max-width: $phone) {
+        padding-top: 450px;
+    }
+   ul{
+    display: flex;
+    @media (max-width: $tab) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 46px;
+    }
+   }
+   .nav-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px 20px;
+    background-color: #F9FAFB;
+    width: 273px;
+    height: 274px;
+   }
+   .nav-line{
+    a{
+        font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    color: $color-shrift;
+    }
+   }
+   .nav-line:hover {
+    background-color: $color-shrift;
+    a{
+        color: white;
+    }
+   }
+   
+}
